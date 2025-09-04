@@ -1,2 +1,48 @@
-<link rel="stylesheet" href="assets/css/main.css" />
-<script type="module" src="assets/js/main.js"></script>
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Kate’s Doodles</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+
+    <!-- Debug text -->
+    <h1 style="padding:12px;background:#ffe;">Hello — HTML is loading</h1>
+
+    <!-- Gallery -->
+    <section id="gallery" class="section">
+        <h2>Gallery</h2>
+        <nav class="filters">
+            <button data-filter="">All</button>
+            <button data-filter="cat">Cat</button>
+        </nav>
+        <div id="grid" class="grid"></div>
+    </section>
+
+    <!-- Guestbook -->
+    <section id="guestbook" class="section">
+        <h2>Guestbook</h2>
+        <form id="gb" class="gb-form">
+            <input name="name" placeholder="Your name" required>
+            <input name="text" placeholder="Say hi ✿" required>
+            <button>Sign</button>
+        </form>
+        <ul id="msgs" class="gb-list"></ul>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <p>© <span id="year"></span> Kate’s Doodles</p>
+    </footer>
+
+    <!-- JS entry point -->
+    <script type="module" src="assets/js/main.js"></script>
+</body>
+
+</html>

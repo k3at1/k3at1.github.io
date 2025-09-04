@@ -3,6 +3,12 @@ import { renderGallery, setupFilters } from "./gallery.js";
 import { setupLightbox } from "./lightbox.js";
 import { setupGuestbook } from "./guestbook.js";
 
+console.log("main.js loaded ✓");
+document.body.insertAdjacentHTML(
+  "afterbegin",
+  "<div style='padding:8px;background:#cfc'>main.js ran</div>"
+);
+
 // optional: mobile nav + smooth scroll + footer year
 initNav();
 renderGallery(); // draw cards
